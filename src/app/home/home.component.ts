@@ -21,6 +21,12 @@ export class HomeComponent implements OnInit {
 
   displayedColumns: string[] = ['nm_paciente',
   'dt_auditoria',
+  'nm_convenio',
+  'cd_atendimento',
+  'cd_reg_fat',
+  'cd_reg_amb',
+  'cd_gru_fat',
+  'cd_pro_fat',
 ];
 
 
