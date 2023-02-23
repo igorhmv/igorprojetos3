@@ -27,6 +27,20 @@ export class HomeComponent implements OnInit {
   'cd_reg_amb',
   'cd_gru_fat',
   'cd_pro_fat',
+  'ds_pro_fat',
+  'ds_motivo_auditoria',
+  'tipo_auditoria',
+  'nm_setor',
+  'qt_lancamento_ant',
+  'qt_lancamento',
+  'qt_total_ajustado',
+  'vl_total_conta_ant',
+  'vl_total_conta',
+  'exclusaoxinclusao',
+  'nm_usuario',
+  'cd_usuario',
+  'setor_usuario',
+  'acao'
 ];
 
 

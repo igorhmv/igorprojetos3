@@ -15,7 +15,21 @@ export interface Relatorio {
     cd_reg_fat:string,
     cd_reg_amb:string,
     cd_gru_fat:string,
-    cd_pro_fat:string
+    cd_pro_fat:string,
+    ds_pro_fat:string,
+    ds_motivo_auditoria:string,
+    tipo_auditoria:string,
+    nm_setor:string,
+    qt_lancamento_ant:number,
+    qt_lancamento:number,
+    qt_total_ajustado:number,
+    vl_total_conta_ant:number,
+    vl_total_conta:number,
+    exclusaoxinclusao:number,
+    nm_usuario:string,
+    cd_usuario:string,
+    setor_usuario:string,
+    acao:string,
     //dataFinal:string,
     //nomePrestador:string
 }

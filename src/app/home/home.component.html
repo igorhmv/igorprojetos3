@@ -73,6 +73,76 @@
                 <td mat-cell *matCellDef="let element"> {{element.cd_pro_fat}}</td>
             </ng-container>
 
+            <ng-container matColumnDef="ds_pro_fat">
+                <th mat-header-cell *matHeaderCellDef> DS do Profissional </th>
+                <td mat-cell *matCellDef="let element"> {{element.ds_pro_fat}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="ds_motivo_auditoria">
+                <th mat-header-cell *matHeaderCellDef> Motivo da Auditoria </th>
+                <td mat-cell *matCellDef="let element"> {{element.ds_motivo_auditoria}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="tipo_auditoria">
+                <th mat-header-cell *matHeaderCellDef> Tipo da Auditoria </th>
+                <td mat-cell *matCellDef="let element"> {{element.tipo_auditoria}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="nm_setor">
+                <th mat-header-cell *matHeaderCellDef> Nome do Setor </th>
+                <td mat-cell *matCellDef="let element"> {{element.nm_setor}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="qt_lancamento_ant">
+                <th mat-header-cell *matHeaderCellDef> Quantidade de Lançamento antes </th>
+                <td mat-cell *matCellDef="let element"> {{element.qt_lancamento_ant}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="qt_lancamento">
+                <th mat-header-cell *matHeaderCellDef> Quantidade de Lançamento </th>
+                <td mat-cell *matCellDef="let element"> {{element.qt_lancamento}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="qt_total_ajustado">
+                <th mat-header-cell *matHeaderCellDef> Quantidade Total Ajustado </th>
+                <td mat-cell *matCellDef="let element"> {{element.qt_total_ajustado}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="vl_total_conta_ant">
+                <th mat-header-cell *matHeaderCellDef> Valor Total da Conta Antes </th>
+                <td mat-cell *matCellDef="let element"> {{element.vl_total_conta_ant}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="vl_total_conta">
+                <th mat-header-cell *matHeaderCellDef> Valor Total da Conta </th>
+                <td mat-cell *matCellDef="let element"> {{element.vl_total_conta}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="exclusaoxinclusao">
+                <th mat-header-cell *matHeaderCellDef> Exclusão x Inclusão </th>
+                <td mat-cell *matCellDef="let element"> {{element.exclusaoxinclusao}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="nm_usuario">
+                <th mat-header-cell *matHeaderCellDef> Nome do Usuário </th>
+                <td mat-cell *matCellDef="let element"> {{element.nm_usuario}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="cd_usuario">
+                <th mat-header-cell *matHeaderCellDef> Código do Usuário </th>
+                <td mat-cell *matCellDef="let element"> {{element.cd_usuario}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="setor_usuario">
+                <th mat-header-cell *matHeaderCellDef> Setor do Usuário </th>
+                <td mat-cell *matCellDef="let element"> {{element.setor_usuario}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="acao">
+                <th mat-header-cell *matHeaderCellDef> Ação </th>
+                <td mat-cell *matCellDef="let element"> {{element.acao}}</td>
+            </ng-container>
+
 
             <mat-header-row class="header-row" *matHeaderRowDef="displayedColumns; sticky: true"></mat-header-row>
             <mat-row class="row" *matRowDef="let row; columns: displayedColumns;"></mat-row>
