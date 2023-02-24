@@ -98,16 +98,7 @@ export class HomeComponent implements OnInit {
         
         alert('relatório sem dados');
       }else{
-        alert('relatório com dados');
-        let dados = 'Resultado da consulta:\n';
-        for(let i = 0; i < relatorioX.length;i++){
-          dados += 'nome do usuario: '+relatorioX[i].nm_paciente + '\n';
-          dados += 'data inicial: '+relatorioX[i].dt_auditoria + '\n';
-          dados += '\n';
-          
-          this.relatorio.push(relatorioX[i]);
-
-        }
+        
         
         this.dataSourceRelatorio.data = relatorioX;
       }
@@ -118,7 +109,7 @@ export class HomeComponent implements OnInit {
         
       }
    )
-      alert(this.relatorio);
+      
    
   }
 
