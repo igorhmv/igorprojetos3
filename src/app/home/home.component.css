@@ -1,4 +1,14 @@
 
+.tela{
+  width: 100%;
+  overflow-x: scroll;
+  
+  height: 100%;
+  overflow-y: scroll;
+  
+}
+
+
 .formulario{
   display: flex;
   flex-direction: row;
@@ -14,13 +24,38 @@
 }
 
 .resultadoPesquisa {
+  
   background-color: rgba(248, 247, 247, 0.973);
   border-radius: 10px;
   margin: 2%;
   padding: 1%;
   box-shadow: 2px 2px 2px 2px rgb(206, 201, 201);
-
+  display: block;
+  
+ width:fit-content;
 }
+
+.resultadoPesquisa mat-table{
+  display: block;
+  
+ 
+}
+
+.resultadoPesquisa mat-table ng-container {
+  display: block
+}
+
+.resultadoPesquisa mat-table ng-container th,
+.resultadoPesquisa mat-table ng-container td{
+  display: block;
+  
+  width: 100%;
+  
+ 
+}
+
+
+    
 
 .tituloRelatorio {
     background-color: blue;
@@ -95,4 +130,6 @@
     border-radius: 10px;
     padding: 0.5%;
   }
+
+ 
   
