@@ -49,19 +49,26 @@ export class HomeComponent implements OnInit {
   constructor(private relatorioservice: RelatorioService) { }
 
   ngOnInit(): void {
-    
+
   }
 
   visualizarDados(){
     this.relatorio = [];
 
-    
-    var data = document.querySelector('form')?.getElementsByTagName('input')[0].value;
-    var dataFinal = document.querySelector('form')?.getElementsByTagName('input')[1].value;
-    
+
+    //var data = document.querySelector('form')?.getElementsByTagName('input')[0].value;
+    //var dataFinal = document.querySelector('form')?.getElementsByTagName('input')[1].value;
+    var data = document.getElementsByTagName('input')[0].value;
+    var dataFinal = document.getElementsByTagName('input')[1].value;
+
 
     if(data === undefined || data === null || dataFinal === undefined || dataFinal === null){
-      alert("dados inválidos");
+      alert("Data inicial e final são obrigatórios.");
+      return;
+    }
+
+    if(!data.match("[0-9]{4}-[0-9]{2}-[0-9]{2}") || !dataFinal.match("[0-9]{4}-[0-9]{2}-[0-9]{2}")){
+      alert("Data inicial e final são obrigatórios.");
       return;
     }
 
@@ -69,7 +76,7 @@ export class HomeComponent implements OnInit {
     dataFinal = dataFinal.replace("-","/");
     data = data.replace("-","/");
     dataFinal = dataFinal.replace("-","/");
-    
+
 
     var vector1 = data.split('/');
     var aux1 = vector1[0];
@@ -91,26 +98,26 @@ export class HomeComponent implements OnInit {
 
 
     let relatorioJson = "?dt_auditoriaInicial=" + data+"&dt_auditoriaFinal=" + dataFinal;
-    
+
    this.relatorioservice.getRelatorio2([dataResult,dataFinalResult]).subscribe((relatorioX:Relatorio[])=>{
-      
+
       if (relatorioX.length === 0) {
-        
+
         alert('relatório sem dados');
       }else{
-        
-        
+
+
         this.dataSourceRelatorio.data = relatorioX;
       }
     },
       erro => {
        // console.log('erro');
         this.relatorioservice.handleError;
-        
+
       }
    )
-      
-   
+
+
   }
 
 }

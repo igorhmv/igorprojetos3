@@ -1,3 +1,6 @@
+
+<div class="pagina">
+  <app-header></app-header>
 <div class="tela">
 
 <div class="filtro">
@@ -5,9 +8,9 @@
     <h3>
         Período:
     </h3>
-    <form class="formulario" id="formulario">
 
-    
+
+
         <mat-form-field class="dataInicial">
             <mat-label for="dataInicialInput"> Data inicial de auditoria: </mat-label>
             <input matInput type="date" id="dataInicialInput" placeholder="0000/00/00" required pattern="\d{4}-\d{2}-\d{2}">
@@ -19,17 +22,17 @@
             <input matInput type="date" id="dataFinalInput" placeholder="0000/00/00" required pattern="\d{4}-\d{2}-\d{2}">
         </mat-form-field>
         <h1></h1>
-   
-    
+
+
 
         <button class="btnVisualizar" type="button" (click)="visualizarDados()">Visualizar</button>
-    </form>
+
 <h1></h1>
 </div>
-
+<div class="textoResultado"><h2>Resultado da Pesquisa</h2>
 <div class="resultadoPesquisa">
-    
-    <h2>Resultado da Pesquisa</h2>
+
+
 
         <mat-table mat-table [dataSource]="dataSourceRelatorio" matshort>
 
@@ -150,19 +153,18 @@
           <tr>
               <td>Nome do Usuário</td>
               <td>Data</td>
-    
+
           </tr>
           <tr *ngFor="let r of this.relatorio">
               <td>{{ r.nm_paciente }}</td>
               <td>{{ r.dt_auditoria }}</td>
-    
+
            </tr>
            -->
         </mat-table>
-    
-    
+      </div>
+
+</div></div>
 </div>
 
-
-</div>
 

@@ -1,0 +1,41 @@
+.header {
+
+  z-index:9;
+  width:100%;
+
+  display: flex;
+  background: #1565c0;
+  min-height: 1000px;
+  height:100%;
+  margin-bottom: 3%;
+
+  flex-direction: column;
+  justify-content: baseline;
+  align-items:center;
+  text-align: center;
+}
+
+.header a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.header .logo {
+  max-height: 82px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  align-items: center;
+  justify-content: center;
+
+
+
+
+
+
+}
