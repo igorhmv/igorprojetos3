@@ -78,16 +78,20 @@ mat-table {
   width: 100%;
   display: table;
 
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  margin-top: -8px;
 
+  color: black;
 }
 
 mat-header-row {
 
 
   display: table-row;
+  font-weight: bolder;
 
-  background-color: white;
-
+  border-left-width: 1px;
 
 }
 
@@ -98,7 +102,10 @@ mat-header-row {
 
   display: table-row;
 
+  border: 1px solid white;
+  border-left-width: 0;
 
+  background-color:rgba(1,1,1,0.05);
 }
 
 
@@ -115,7 +122,7 @@ mat-header-row {
 }
 
 td{
-  min-width:300px;
+  min-width:400px;
     vertical-align: middle;
 
     word-wrap:initial;
@@ -129,8 +136,8 @@ td{
 
 
   font-family:inherit;
-    font-weight: 400;
-    font-size:1rem;
+    font-weight: 10px;
+    font-size:18px;
 
 
     text-align: left;
@@ -140,7 +147,7 @@ td{
 }
 
    th {
-    min-width:300px;
+    min-width:400px;
     vertical-align: middle;
 
     word-wrap:initial;
@@ -154,9 +161,10 @@ td{
 
 
 
-    font-weight: 400;
-    font-size:1rem;
-    color:gray;
+    font-weight: 10px;
+
+    font-size:18px;
+    color:black;
 
     text-align: left;
 
